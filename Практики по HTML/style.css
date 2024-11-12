@@ -1,0 +1,958 @@
+@media screen and (max-height: 600px){
+  .glass_cards{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+    footer{
+        visibility: hidden;
+    }
+    body{
+        font-size: 3vh;
+    }
+    body form p{
+        font-size: 3vh;
+    }
+    #menu{
+        position: fixed; /* allow us to position the menu on top of the rest of the content. */
+        left: -300px;/* This property moves the menu outisde of the viewport*/
+        top: 40px; /*This property sets the distance between the top edge of the menu and the top edge of the #menuToggle div.*/
+        width: 150px; 
+        margin: -100px 0 0 -50px;/* The negative margin values are used to move the menu up and to the left to center it vertically and horizontally within the #menuToggle div. */
+        padding: 30px;
+        padding-top: 125px;
+        background: linear-gradient(to left, #420000, #080103, #004202);
+        list-style-type: none; /* removes the default bullet points of the list. */
+        -webkit-font-smoothing: antialiased; /*This property sets the font smoothing for webkit browsers. */
+        
+        transition: left 0.5s; /* This property sets the transition effect for the left property. This will create a smooth animation when the menu slides in from the left.*/
+      }
+}
+
+@media screen and (max-width: 1256px)
+{
+
+  body .gallery{
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40vh 30vh;
+    background-color: #8b8585;
+    margin-top: 4em;
+    gap: 10px;
+  }
+  
+  .gallery .item1{
+    transition: all 1.2s;
+    background-color: #144700;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .gallery .item2{
+    align-self: center;
+    transition: all 1.2s;
+    background-color: #144700;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .gallery .item3{
+    transition: all 1.2s;
+    background-color: #144700;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .gallery .item4{
+    transition: all 1.2s;
+    background-color: #144700;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  .gallery .item5{
+    transition: all 1.2s;
+    background-color: #144700;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .glass_cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .glass_cards .card_box2{
+    margin-top: 3em;
+  }
+  .glass_cards .card_box3{
+    margin-top: 4em;
+  }
+
+    body .specialImgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+    }
+    .specialImgs .specialImgsText{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em; 
+    }
+
+    body .gallery{
+      display: grid;
+      grid-template-columns: 50vw;
+      grid-template-rows: repeat(4, 40vw);
+      background-color: #970101;
+      margin-top: 4em;
+      gap: 10px;
+    }
+    
+    .gallery .item1{
+      transition: all 1.2s;
+      background-color: rgb(85, 18, 18);
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+    .gallery .item2{
+      transition: all 1.2s;
+      background-color: rgb(85, 18, 18);
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
+    .gallery .item3{
+      transition: all 1.2s;
+      background-color: rgb(85, 18, 18);
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+    .gallery .item4{
+      transition: all 1.2s;
+      background-color: rgb(85, 18, 18);
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+    .gallery .item5{
+      transition: all 1.2s;
+      background-color: rgb(85, 18, 18);
+      grid-column: 1 / 3;
+      grid-row: 4 / 5;
+    }
+}
+
+
+
+
+@keyframes highen-widen{
+    from{
+        display: flex;
+
+        justify-content: center;
+        height: 100px;
+        width: 50px;
+        background-color: #ffffff;
+    }
+    50%{
+        background-color: #535353;
+        width:200px;
+        height: 100px;
+    }
+    to{
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0));
+        height:270px;
+        width:200px;
+    }
+}
+
+@keyframes gallery_color{
+  from{
+    background-color: #000000;
+  }
+  to{
+    background-color: #bb0707;
+  }
+}
+
+@keyframes move_forward_before{
+  from{
+    margin-left: 0em;
+    margin-top: -14em;
+  }
+  50%{
+    margin-left: 4em;
+    margin-top: -14em;
+  }
+  to{
+    margin-left: 4em;
+    margin-top: -12em;
+    
+  }
+}
+
+@keyframes move_backwards_after{
+  from{
+    margin-top: 0em;
+  }
+  to{
+    margin-top: -3em;
+  }
+}
+
+@keyframes making_bigger {
+  from{
+    width:200px;
+    height:100px;
+  }
+  to{
+    width:150px;
+    height:120px;
+  }
+}
+
+@keyframes unskew{
+  from{
+    transform: skew(20deg);
+  }
+  to{
+    transform: skew(0deg);
+  }
+}
+
+
+body{
+    font-size: 1vw 1vh;
+    color:rgb(136,9,9);
+    display: flex;
+    flex-direction: column;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 800;
+    background: linear-gradient(to right,#420000, #080103, #004202) ;
+    font-style: normal;
+    text-shadow: 1px 1px 1px rgb(4, 107, 0);
+  }
+  
+
+
+h1{
+    text-shadow: 1px 1px 1px rgb(4, 107, 0);
+    color:rgb(136, 9, 9);
+    font-weight: 800;
+    font-feature-settings: "smcp";
+}
+
+
+aside{
+    float: right;
+}
+
+.hh1{
+    font-family: "Protest Guerrilla", system-ui;
+    font-weight: 350;
+    font-style: normal;
+}
+  
+
+
+.hh3 {
+    font-family: "Jacques Francois Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.hh2{
+    font-family: "Fredericka the Great", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+
+.element{
+    padding: 10px 20px 30px 40px
+}
+
+.ss{
+    
+    left: 20%;
+}
+
+img{
+
+    max-width: 100%;
+    max-height: 100%;
+    border-width: 3px;
+    border-style: solid;
+    border-color:#000000;
+    margin-top: 2em;
+}
+
+header a:hover{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    outline: solid rgb(66, 0, 0);
+    transition: background-color .2s linear;
+}
+
+header a:visited{
+    color:rgb(136,9,9);
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+
+.fav{
+    position: fixed;
+    margin-left: 45%;
+    top: 20px;
+}
+
+
+.imgLisa{
+    border-radius: 20px;
+    top: 0px;
+    left: 250px;
+}
+
+body article img{
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+}
+
+
+
+footer a{
+    color: rgb(136,9,9) 
+}
+
+footer a:active{
+    color: rgb(0, 128, 32);
+}
+
+footer{
+    position: fixed;
+    background-color:#000000;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+    /*max-width: 100%;
+    max-height:100%;*/
+    text-align: center;
+    font-size: 1vh;
+}
+
+form p{
+    font-family: "Press Start 2P", system-ui;
+}
+
+input{
+    background-color: #000000;
+    color:rgb(99, 0, 0);
+    font-family: "Press Start 2P", system-ui;
+    border-color: rgb(0, 128, 32);
+    text-shadow: 1px 1px 1px rgb(0, 128, 32);
+}
+
+form p input:active{
+    border-color: #000000;
+}
+
+button{
+    cursor: pointer;
+    background-color: #000000;
+    color:rgb(99, 0, 0);
+    margin-top: 1em;
+    font-family: "Press Start 2P", system-ui;
+    border-color: rgb(0, 128, 32);
+    text-shadow: 1px 1px 1px rgb(0, 128, 32);
+    transition: background-color .2s linear;
+}
+
+form label:hover,
+form button:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(99, 0, 0);
+}
+
+form button:active{
+    background-color: red;
+    color: rgb(0, 128, 32);
+    text-shadow: 1px 1px 1px rgb(99, 0, 0);
+}
+
+body .fl{
+    font-family: "Press Start 2P", system-ui;
+}
+
+form label,
+form input{
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+fieldset{
+    border-color: rgb(136,9,9);
+    border-style: solid;
+}
+
+fieldset:hover{
+    background-color: #000000;
+    transition: background-color .2s linear;
+}
+
+body .hh4{
+    font-size: 2em;
+}
+
+::placeholder{
+    font-size: 0.7em;
+}
+
+iframe{
+    margin: 2em;
+}
+
+div, p{
+    margin-top: 1em;
+}
+
+
+
+/*new stuff*/
+
+#menuToggle span {
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transform-origin: 4px 0px; /* set to 4px 0px to specify the center of rotation for the transform property above. */
+}
+#menuToggle span:first-child {
+    transform-origin: 0% 0%; /*sets the origin of the transform property to the top left corner of the element.*/
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; /*sets the origin of the transform property to the bottom left corner of the element.*/
+  }
+
+  #menuToggle input:checked ~ span {/* selects all span elements that come after an input element that is checked inside the #menuToggle element. */
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #018f20;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3) { /* selects the third span element from the end that comes after an input element that is checked inside the #menuToggle element. */
+    opacity: 0; /* sets the opacity of the element to 0, making it invisible. */
+    transform: rotate(0deg) scale(0.2, 0.2); /* applies a rotation of 0 degrees and a scale of 0.2 to the element, making it very small and invisible.*/
+  }
+
+  #menu{
+    position: fixed; /* allow us to position the menu on top of the rest of the content. */
+    left: -300px;/* This property moves the menu outisde of the viewport*/
+    top: 40px; /*This property sets the distance between the top edge of the menu and the top edge of the #menuToggle div.*/
+    width: 150px; 
+    margin: -100px 0 0 -50px;/* The negative margin values are used to move the menu up and to the left to center it vertically and horizontally within the #menuToggle div. */
+    padding: 30px;
+    padding-top: 125px;
+    background: linear-gradient(to left,#420000, #080103, #004202);
+    list-style-type: none; /* removes the default bullet points of the list. */
+    -webkit-font-smoothing: antialiased; /*This property sets the font smoothing for webkit browsers. */
+    
+    transition: left 0.5s; /* This property sets the transition effect for the left property. This will create a smooth animation when the menu slides in from the left.*/
+  }
+  
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  #menuToggle input:checked ~ ul {
+    left:40px;
+  }
+
+  ul a{
+    color:#aa0000;
+  }
+
+  ul a:hover{
+    background-color: aliceblue;
+    transition: background-color 0.2s linear;
+    border-radius: 0.5em;
+    color:#000000;
+    font-weight: 400;
+  }
+
+  body .arni{
+    margin-left: 220px;
+    margin-top: -120px;
+  }
+
+  h1 img{
+    vertical-align: middle;
+  }
+
+  body .specialImgs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+  .specialImgs .specialImgsText{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    top: 14em;
+  }
+
+  .specialImgs .specialImgsText .specialTextFirst{
+    transform: translateX(-140%);
+  }
+
+  .specialImgs .specialImgsText .specialTextSecond{
+    transform: translateX(90%);
+  }
+  body .specialImgs:hover{
+    opacity: 1;
+    transition: opacity 1s ease-out;
+  }
+
+  .square:hover{
+    cursor:pointer;
+    animation-name: highen-widen;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    border-radius: 5%;
+  }
+
+  .square{
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    margin-left: 47%;
+    margin-right: 47%;
+  }
+
+  main div .notificationContent{
+    position:absolute;
+  }
+
+  main div .notificationContent li{
+    margin-top: 3em;
+  }
+
+  body .notificationContent{
+    top: 4em;
+    opacity: 0;
+  }
+
+  body .notificationContent:hover{
+    opacity: 1;
+    transition: opacity 0.3s step-end;
+  }
+
+  .glass_cards{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .bg_gradient1{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(95, 128, 103), rgb(151, 180, 20));
+    position: absolute;
+    border-radius: 1rem;
+    width: 150px;
+    height: 220px;
+    transform: skew(20deg);
+    margin-left: 3em;
+    margin-top: -1em;
+}
+
+
+.card1{
+  width:200px;
+  height:100px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  
+}
+
+
+.card2{
+  width:200px;
+  height:auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  
+}
+.bg_gradient2{
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgb(112, 0, 0), rgb(33, 0, 182));
+  position: absolute;
+  border-radius: 1rem;
+  width: 150px;
+  height: 220px;
+  transform: skew(20deg);
+  margin-left: 3em;
+  margin-top: -1em;
+}
+
+.card3{
+  width:200px;
+  height:auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  
+}
+.bg_gradient3{
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to bottom, rgb(168, 5, 168), rgb(255, 255, 255));
+  position: absolute;
+  border-radius: 1rem;
+  width: 150px;
+  height: 220px;
+  transform: skew(20deg);
+  margin-left: 3em;
+  margin-top: -1em;
+}
+
+.glass_cards .card1:hover{
+  animation-name: making_bigger;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.glass_cards .card_box1:hover  .bg_gradient1{
+  animation-name: unskew;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.glass_cards .card2:hover{
+  animation-name: making_bigger;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.glass_cards .card_box2:hover  .bg_gradient2{
+  animation-name: unskew;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.glass_cards .card3:hover{
+  animation-name: making_bigger;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.glass_cards .card_box3:hover  .bg_gradient3{
+  animation-name: unskew;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+.bottom_small_cube{
+  opacity: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  content: "";
+
+  width:50px;
+  height:50px;
+  margin-top: 0em;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 20%;
+}
+
+.upper_small_cube{
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  content: "";
+  width:50px;
+  height:50px;
+  margin-top:-14em;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 20%;
+}
+
+ .glass_cards .card_box1:hover .upper_small_cube{
+  animation-name: move_forward_before;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.glass_cards .card_box1:hover .bottom_small_cube{
+  animation-name: move_backwards_after;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.glass_cards .card_box1:hover .bottom_small_cube_container{
+  transform: translateX(-4em);
+}
+
+.glass_cards .bottom_small_cube_container{
+  display: flex;
+  justify-content: flex-end;
+  transition: all 2s;
+}
+
+footer .inst{
+  display: flex;
+  overflow: hidden;
+  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  width:30px;
+  height:30px;
+  margin-top: 2px;
+  border-radius: 3em;
+}
+
+footer .inst::before{
+  z-index: -1;
+  transform: translateY(-105%);
+  position: absolute;
+  width: 30px;
+  height: 33px;
+  content: "";
+  background: linear-gradient(to bottom, red, green);
+  transition: all 1s;
+}
+
+footer .inst:hover{
+  cursor: pointer;
+}
+
+footer .inst:hover::before{
+  margin-top: 67px;
+}
+
+.gallery{
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30vh 25vh 33vh;
+  background: linear-gradient(to bottom, rgb(0, 59, 0), black, rgb(128, 0, 0));
+  margin-top: 4em;
+  gap: 10px;
+}
+
+.item1{
+  transition: all 1.2s;
+  background-color: #420000;
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+}
+.item2{
+  transition: all 1.2s;
+  background-color: #420000;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+.item3{
+  transition: all 1.2s;
+  background-color: #420000;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+.item4{
+  transition: all 1.2s;
+  background-color: #420000;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.item5{
+  transition: all 1.2s;
+  background-color: #420000;
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
+
+.item1:hover{
+  animation-name: gallery_color;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.item2:hover{
+  animation-name: gallery_color;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.item3:hover{
+  animation-name: gallery_color;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.item4:hover{
+  animation-name: gallery_color;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.item5:hover{
+  animation-name: gallery_color;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.return_to_enter {
+  display: flex;
+  justify-content: center;
+}
+
+.like{
+  border-radius: 20%;
+}
+
+.like:hover{
+  cursor: pointer;
+}
+
+.visit_shop{
+  display: flex;
+  justify-content: center;
+}
+
+/*
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30vh 25vh 33vh;
+  background: linear-gradient(to bottom, rgb(0, 59, 0), black, rgb(128, 0, 0));
+  margin-top: 4em;
+  gap: 10px;
+*/
+.biggerGallery{
+  display: grid;
+  grid-template-columns: (4, 1fr) ;
+  grid-template-rows: 800px 350px;
+  background: #000000;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.pic0{
+  background-color: #420000;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+}
+
+.pic0 img{
+  width: 100vw;
+  height: 80%;
+
+}
+
+.pic0:hover{
+  background-color: #e0e0e0;
+}
+
+.pic1{
+  display: flex;
+  background-color: #224207;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-items: stretch;
+}
+
+.pic1 img{
+  width: 100vw;
+  height: 80%;
+
+}
+
+.pic1:hover{
+  background-color: #e0e0e0;
+
+}
+
+.pic2{
+  background-color: #ff0000;
+  grid-column:  3/ 4;
+  grid-row: 2 / 3;
+
+}
+
+.pic2 img{
+  width: 100vw;
+  height: 80%;
+
+}
+
+.pic2:hover{
+  background-color: #420000;
+}
+
+.pic3{
+  overflow: hidden;
+  background-color: #886868;
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+
+}
+
+.pic3 img{
+  width: 100vw;
+  height: 80%;
+
+}
+
+.pic3:hover{
+  background-color: #e0e0e0;
+
+}
+
+.pic4{
+  background-color: #886868;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+
+}
+
+.pic4 img{
+  width: 100%;
+  height: 80%;
+
+}
+
+
+.pic4:hover{
+  background-color: #e0e0e0;
+
+}

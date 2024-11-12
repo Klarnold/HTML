@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" href="Фавинка.ico" sizes="any">
+    <title>Вход на сайт</title>
+
+    <link rel="stylesheet" href="styleEnter.css">
+
+    <script src="siaod.js"></script>
+
+    <meta charset="UTF-8">
+
+    <style>
+    </style>
+</head>
+
+<header>
+    <div>
+        Регистрация
+    </div>
+</header>
+
+<body>
+    <script>
+        sign = prompt("Желаете пройти регистрацию на сайте?"), "Да";
+
+        if (sign == "Да")
+        {
+            alert("Круто!");
+            sign = prompt("Введите логин");
+            if (!sign)
+                alert("Отменено");
+            else if (sign == "Админ"){
+                sign = prompt("Введите пароль");
+                if (!sign)
+                    alert("Отменено");
+                else if (sign == "Я главный")
+                    alert("Здравствуйте-с!");
+                else
+                    alert("Введён неверный пароль");
+            }
+            else
+                alert("Я вас не знаю");
+        }
+        else
+        {
+            alert("Попробуйте ещё раз");
+            /*
+            window.location.href = "2-прак.html";
+            window.location.href = "enter.html";
+            */
+        }
+    </script>
+    <main class="container">
+        <div class="all_data">
+            <p>Введите данные</p>
+            <form action="" method="get">
+                <p class="password">
+                    <label for="pswd">Пароль</label>
+                    <input type="password" name="pswd" id="pswd" minlength="3" placeholder="вот тут вводите пароль" required pattern="[0-9]*">
+                </p>
+                <p class="userName">
+                    <label for="name">Имя пользо-<br>вателя</label>
+                    <input type="text" name="name" id="name" placeholder="введите имя пользователя" minlength="3" required>
+                </p>
+                <button type="button" onclick="go_to_the_site()">Го на главный сайт</button>
+
+                <p class="capcha" id="capcha">
+                </p>
+                <p>
+                    <input type="text" name="cap" id="cap" placeholder="введите капчу" minlength="3" required>
+                </p>
+                <button type="button" onclick="check_capcha()">проверить капчу</button>
+
+            </form>
+        </div>
+    </main>
+    <div class="box" id="box">
+    </div>
+    <form>
+        <button type="button" onclick="create_cube()">Создать куб</button>
+    </form>
+</body>
+
+</html>

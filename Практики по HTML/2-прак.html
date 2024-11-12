@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mingzat&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Fredericka+the+Great&family=Jacques+Francois+Shadow&family=Silkscreen:wght@400;700&family=Sofadi+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <title>Best of the Best</title>
+    <link rel="icon" href="Фавинка.ico" sizes="any">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <style>
+        h1{
+            color: rgb(136,9,9);
+            text-shadow: 2px 2px 2px green;
+        }
+        p{
+            font-size: 16px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        header a:active{
+            background-color: #420000;
+            color:black;
+            transition: background-color .2s linear;
+            
+        }
+        header {
+            
+            background-color: black;
+            position: fixed;
+            font-weight: 1em;
+            font-size: 1em;
+            margin-left: -9em;
+           
+            
+        }
+        select{
+            border-radius: 5%;
+            border-color: #420000;
+            background-color: #000000;
+            font-family: "Press Start 2P", system-ui;
+            color: rgb(136,9,9);
+        }
+        select:active{
+            background-color: aliceblue;
+            color:#000000;
+            transition: background-color .2s linear;
+        }
+        .hh1{
+            display:block;
+        }
+        .hh2{
+            display:block;
+        }
+        .hh3{
+            display:block;
+        }
+        .h4, .hh4{
+            display:block;
+            font-family: "Protest Guerrilla", system-ui;
+            font-weight: 0.8em;
+            font-style: normal;
+            font-size: 1em;
+        }
+        .h5{
+            display: block;
+            font-family: "Protest Guerrilla", system-ui;
+        }
+
+        .hh5{
+            font-family: "Protest Guerrilla", system-ui;
+            font-weight: 100;
+            font-size: 2em;
+        }
+
+        textarea{
+            resize:none;
+            font-family: "Press Start 2P", system-ui;
+        }
+        body .ss{
+            justify-items: center;
+        }
+        #menuToggle{
+            position: fixed;
+            z-index: 1;
+        }
+        #menuToggle input {
+            position: absolute;
+            width:40px;
+            cursor: pointer;
+            opacity: 0; 
+            z-index: 2; /* in order to place the checkbox over the hamburguer */
+            -webkit-touch-callout: none;
+        }
+
+        #menuToggle span {
+            display: block; /* to ensure that each span element occupies its own line. */
+            width: 33px;
+            height: 4px;
+
+            margin-bottom: 5px; /* create some spacing between the span elements. */
+            position: relative; /* allow for positioning changes in relation to the parent div.*/
+            background: rgb(0, 128, 32);
+            border-radius: 3px;
+            z-index: 1; /* ensure that the span element is under the checkbox */
+        }
+        .box{
+            position:absolute;
+        }
+        
+    </style>
+</head>
+
+    
+
+<body>
+
+    <div id="menuToggle">
+        <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a class = "hh1" href = "#Topic1" >Why is this website really needed?</a>
+            <a class = "hh2" href = "#Topic2">The filling of the site</a>
+            <a class = "hh3" href = "#Topic3">Why exactly this site deserves your attention?</a>
+            <a class = "h4" href = "#Topic4">Required questions</a>
+            <a class = "h5" href = "#Topic5">Work with images</a>
+        
+    </div>
+
+   
+    <section>
+    
+
+    
+    </section>
+    <article>
+    
+
+    <main>
+        <form class="return_to_enter">
+            <button type="button" onclick="go_to_the_site()">Вернуться в регистрацию</button>
+        </form>
+
+        <form class="visit_shop">
+            <button type="button" onclick="go_to_shop()">Зайти в магазин</button>
+        </form>
+    
+        <div class="square">
+            <img src="https://avatars.mds.yandex.net/i?id=7937a5e0ae36b7598a1de4d5bf0ebb27_l-5870396-images-thumbs&n=13" alt="square" width="50px" height="50">
+            <ol class="notificationContent">
+                <a href="#Topic1">
+                    <li>content1</li>
+                </a>
+                <a href="#Topic2">
+                    <li>content2</li>
+                </a>
+                <a href="#Topic3">
+                    <li>content3</li>
+                </a>
+            </ol>
+        </div>
+   
+    <h1 id="Topic1" class = "hh1">Why is this website really needed?</h1>
+        <img src = "arnold.png" width = "200" height = "100">
+    <section class="arni">
+        <div>
+    <b>Всё</b> <strong>пройдёт</strong> <i>как</i> <em>с</em> <mark>белых</mark> <small>яблонь</small> <s>дым</s>, <br>
+    <del>Я</del> <u>не</u> <ins>буду</ins> <sub>больше</sub> <sup>молодым</sup> <aside> <s>Почему aside не работает?</s> Теперь работает
+       </aside>
+    </div>
+      
+    <form action="" method="get">
+        Внимание, вопрос: думаете ли вы, что Arnold является лучшим персонажем игры Lisa:The pointless?<br>
+        <label><input type="radio" name="arniQ" value="theBest">Да, я уверен, что это лучший персонаж.</label><br>
+        <label><input type="radio" name="arniQ" value="theBest">Нет, я не думаю: я знаю, что это лучший персонаж.</label><br>
+        <label><input type="radio" name="arniQ" value="theBest">Возможно, есть и персонажи похуже. Однако я думаю, что Arnold лучше всех.</label>
+    </form>
+
+    <q>Только забыв обо всём, мы понимаем, что ничего не вернуть</q> - <cite>"Время"</cite>
+    <blockquote>Там, далеко-далеко, есть земля. Ты не порешиь там новый год два раза в год.</blockquote>
+    <abbr>Снег</abbr> (персонаж из серии фильмов про Гарии Гончара)
+    </section>
+</article>
+    <section>
+    <h2 id = "Topic2" class = "hh2">The filling of the site</h2>
+    
+    Злые языки говорят, что успеха не будет, но они ещё не видели следующий упорядоченный список:<br>
+    <p>
+    <ol type="A" start="20">
+    
+        <li>Сорок</li>
+        <li>Два</li>
+    </ol>
+    <ol>
+        <li>
+            <ul>
+                <li>Долго ли</li>
+                <li>Коротко ли</li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li>Много ли</li>
+                <li>Мало ли</li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li>Коль люди знали бы,</li>
+                <li>То себя бы увидели</li>
+            </ul>
+        </li>
+    </ol>
+    </p>
+    </section>
+
+    <section>
+        <h3 id = "Topic3" class = "hh3">Why exactly this site deserves your attention?</h3>
+    <p>
+        <dl>
+            Следует перейти к более важным вещам, аналогов которым не существут
+            <dt>Путь</dt>
+            <dd>Дорога самурая</dd>
+            <dd>Курс рубля</dd>
+
+            <dt>Сарказм</dt>
+            <dd>Глумящееся над абсурдностью ситуации высказывание</dd>
+            <dd>Интонация челвека, подчёркивающая несуразность произносимого высказывания</dd>
+
+            <dt>Месяц<dt>
+            <dd>Луна</dd>
+            <dd>Временной период размерностью в 31 день</dd>
+
+            <dt>Долг</dt>
+            <dd>Обязанность перед кем-то/чем-то, оказавшим услугу</dd>
+
+            <dt>Солнце</dt>
+            <dd>массивное самосветящееся небесное тело, состоящее из газа и плазмы, в котором происходят, происходили или будут происходить термоядерные реакции</dd>
+        </dlv>
+        Следует перейти к изображениям, отражающим суть выше перечисленных слов<br>
+        
+        <div class="specialImgs">
+                <img class = "ss" src="https://i.ytimg.com/vi/nvz3s3TM1ns/hqdefault.jpg" alt="88" width="200" height = "200">  
+                <img class = "imgLisa" src="https://avatars.mds.yandex.net/i?id=8f14214ab102a5f8afc100314310a86f8975077d-5233217-images-thumbs&n=13" usemap="#shapes" alt="the title" width="300" height = "200" >
+                <img class = "imgRando" src="https://avatars.mds.yandex.net/i?id=53978a0e29ece6599996c54106eaf6e3_l-5221392-images-thumbs&n=13" alt="rando" width="200" height="300">
+                <div class="specialImgsText">
+                    
+                </div>
+        </div>
+        <div style="clear: both"></div>
+
+        <map name="shapes">
+            <area shape = "circle" coords = "150, 10, 40" href="#Topic1">
+            <area shape ="poly" coords = "100, 50, 120, 90, 180, 50, 160, 90" href="#Topic2">
+            <area shape="rect" coords = "210, 150, 90, 100", href="#Topic3">
+        </map>
+        
+    </section>
+    </main>
+
+    
+
+    <div>
+        Очевидно, что наш сайт вам очень сильно понравился 
+    </div>
+    <form action="" method="get">
+        <p>
+            <label for="cardNumber">Введите номер вашей банковской карты:</label>
+            <input type="text" placeholder="iambattokam" name="cardNumber" id="cardNumber" required>
+        </p>
+        <p>
+            <label for="month">Введите дату окончания срока действия данной карты:</label>
+            <input type="month" name="month" id="month" required>
+        </p>
+        <p>
+            <label for="tel">У вас возникли проблемы с заполнением предыдущих данных? Верно? Тогда введите свой номер телефона, чтобы моглы помочь вам выбраться из столь затруднительной ситуации</label>
+            <input type="tel" placeholder="8-800-555-35-35" minlentgh="10" maxlength="10"  name="tel" id="tel" required>
+        </p>
+        <p>
+            <label for="psswd">Также введите пароль от своего банковского акканта на телефоне:</label>
+            <input type="password" placeholder="abcd1234" name="password" id="password" required>
+        </p>
+        <p>
+            <label for = "datetime-local">И не забудьте ввести текущее время:</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local" required>
+        </p>
+        <label><input type="checkbox" name="resque" min = "2024-24-09T23:59">Согласиться с условиями договора</label><br><br>
+        <button type="submit">Отправить</button><br><br>
+    </form>
+    
+    <label for="about">Передайте ВСЕ свои личные данные чуть ниже:</label><br><br>
+
+    <form method="get" >
+        <p>    
+            <label for="image_uplaods">Выберите изображение для загрузки на наш сайт (PNG, JPG)</label>
+                
+            <input
+                type="file"
+                id="image_uploads"
+                name="image_uploads"
+                accept=".png, .jpeg, .jpg"
+                >
+        </p>
+        <div>
+            <button>Подтвердить</button>
+        </div>
+
+    </form>
+    <form>
+        <label for = "about"></label>
+        <textarea  required placeholder="Что? Окошко слишком маленькое для ВСЕХ ваших данных? Ничего, если действительно зохотите, то у вас обязательно получится!"id="about" name="about" rows="8" cols="8"></textarea><br><br>
+        <label for = "anything"></label>
+        <textarea  required placeholder ="Пишите, что душе угодно" id="anything" name="anything" minlength="10" maxlength="100" rows="20" cols="20"></textarea><br><br>
+        <button type="submit">Отправить</button>
+    </form>
+    <h4 id ="Topic4" class = "hh4">Required questions</h4>
+    <form>
+        <fieldset>
+            <legend>Сколько нужно очков до перехода к третей складке с первой?</legend>
+            <label>
+                <input type="radio" name = "answer" value="eight">
+                Восемь
+            </label>
+            <label>
+                <input type="radio" name = "answer" value="sixteen">
+                Шестнадцать
+            </label>
+            <label>
+                <input type="radio" name = "answer" value="twentyfour">
+                Двадцать четыре
+            </label>
+            <label>
+                <input type="radio" name = "answer" value="thirtytwo">
+                Тридвать два
+            </label>
+        </fieldset>
+    </form>
+
+    <div>
+        Выполнив предыдущее задание, переходите к следущему важному опроснику
+    </div>
+
+    <form>
+        <label for="city-select">Ваш любивый город</label>
+        <select name="city" id="city_select">
+            <option value="">-- Ваш любимый город --</option>
+            <option value="olathe">Olathe</option>
+            <option value="concord">Concord</option>
+            <option value="ribinsk">Рыбинск</option>
+            <option value="minsk">Минск</option>
+        </select>
+    </form>
+    <div>
+        Посмотрите на этот сайт. Спасибо ему за детство!
+    </div>
+    <iframe
+        id = "googleMaps"
+        title = "googleMaps"
+        width= "400"
+        height="250"
+        src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpointless-rpg.fandom.com%2Fwiki%2FLISA%3A_The_Pointless&psig=AOvVaw3dcO0s1Pd8YGQLx03NQ0-T&ust=1727777932833000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNi46sC46ogDFQAAAAAdAAAAABAE"   
+    >
+    </iframe>
+
+    <div>
+        Далее представлен видеоряд подробно описывающий идею данного сайта
+    </div>
+
+    <iframe
+        id ="videoBasa"
+        title = "videoBasa"
+        width = "400em"
+        height = "250em"
+        src = "https://rutube.ru/video/506980fa1c71b605b2a6bcb231e3fd57/"
+    >
+
+    </iframe>
+
+    <h4 id ="Topic5" class = "hh5">Work with images</h4>
+
+   
+
+    
+    <div class="glass_cards">
+        <div class="card_box1">
+            
+            <div class="bg_gradient1"> </div>
+           
+            <div class="card1">
+
+                <h5 class="card_title1">Aboba</h5>
+                <div>Some stupid text</div>
+            </div>
+            <div class="upper_small_cube"></div>
+            <div class="bottom_small_cube_container">
+                <div class="bottom_small_cube"></div>
+            </div>
+        </div>
+
+        <div class="card_box2">
+            <div class="bg_gradient2">
+            </div>
+            <div class="card2">
+                <h5 class="card_title2">Aboba</h5>
+                <div>Some stupid text</div>
+            </div>
+        </div>
+
+        <div class="card_box3">
+            <div class="bg_gradient3">
+            </div>
+            <div class="card3">
+                <h5 class="card_title3">Aboba</h5>
+                <div>Some stupid text</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <div class="item1">
+            <img src="C:\Users\Den\Desktop\Graphics\ГлавныйЭкран.png">
+        </div>
+        <div class="item2">
+            <img src="Roland.png">
+        </div>
+        <div class="item3">
+            
+        </div >
+        <div class="item4">
+            
+        </div>
+        <div class="item5">
+            
+        </div>
+    </div>
+
+
+    <div class="biggerGallery" id="biggerGallery">
+        <div class="pic0" id="pic0">
+            <img src="BlackSilence.jpg">
+        </div>
+
+        <div class="pic1" id="pic1">
+            <img src="Roland.png">
+        </div>
+
+        <div class="pic2" id="pic2">
+            <img src="Fixers.png">
+        </div>
+
+        <div class="pic3" id="pic3">
+                <img src="Yesod.png">
+        </div>
+
+        <div class="pic4" id="pic4">
+            <img id="p4" src="BlackSilence.jpg">
+        </div>
+    </div>
+
+    <form>
+        <button type="button" onclick="func_1()">Открыть окошко</button>
+    </form>
+    <form>
+        <button type="button" onclick="func_2()">Природа</button>
+    </form>
+    <div id="nature">Я люблю природу</div>
+
+    <form>
+        <button class="like" id="heart" type="button" onclick="like(this.id)">♥ 120</button>
+    </form>
+
+    <form>
+        <button id="dr" type="button" onclick="al()">Начать рисовать</button>
+    </form>
+    <P>
+        "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
+    </P>
+        <footer>
+            <div class="inst">in</div>
+            <address>
+               Хотите донести свой отзыв до администрации? Пишите сюда<br>
+              <a href="https://yandex.ru/images/search?from=tabbar&img_url=http%3A%2F%2Fimg.razrisyika.ru%2Fkart%2F101%2F401594-mozg-cheloveka-35.jpg&lr=213&pos=1&rpt=simage&text=мозг">Вся информация была взята с данного ресурса</a><br>
+            
+            <a href="tel:88005553535">Наш кол-центр</a><br>
+            <a href = "malito:obmanulovo@mail.com">Написать письмо в службу поддержки</a><br>
+            </address>
+        </footer>
+    <script src="siaod.js"></script>
+
+</body>
+
+
+</html>

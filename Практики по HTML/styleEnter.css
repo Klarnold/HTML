@@ -1,0 +1,119 @@
+@media screen and (max-width:1256px){
+  body header{
+    font-size: 5vw;
+    background: #004202;
+  }
+  body .all_data{
+    font-size: 3vw;
+  }
+  form input{
+    font-size: 1vw;
+    width: 25vw;
+  }
+  body .all_data{
+    height: 60vw;
+  }
+}
+
+@media screen and (max-width:628px){
+  body header{
+    background: #420000;
+  }
+
+  body .all_data{
+    height: 70vw;
+  }
+}
+
+body{
+    font-size: 1vw 1vh;
+    color:rgb(136,9,9);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 800;
+    background: linear-gradient(to right,#420000, #080103, #004202) ;
+    font-style: normal;
+    text-shadow: 1px 1px 1px rgb(4, 107, 0);
+  }
+
+.page2{
+  display: "none";
+}
+
+div .page3{
+  display: "none";
+}
+
+button{
+  background-color: #000000;
+  color:rgb(99, 0, 0);
+  font-family: "Press Start 2P", system-ui;
+  border-color: rgb(0, 128, 32);
+  text-shadow: 1px 1px 1px rgb(0, 128, 32);
+  transition: background-color .2s linear;
+}
+
+form label:hover,
+form button:hover{
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px rgb(99, 0, 0);
+}
+
+form button:active{
+  background-color: red;
+  color: rgb(0, 128, 32);
+  text-shadow: 1px 1px 1px rgb(99, 0, 0);
+}
+
+header{
+  font-size: 4em;
+  background: #000000;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+main{
+  font-size: 2em;
+  text-align: center;
+}
+
+.all_data{
+  width: 30vw;
+  height: 650px;
+  border: solid #000000;
+  border-width: 10px;
+  border-radius: 10%;
+  background: linear-gradient(to bottom,#420000, #080103, #004202);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+
+}
+
+form label{
+  display:block;
+}
+
+input{
+  width:350px;
+  background-color: #000000;
+  color:rgb(189, 0, 0);
+  font-family: "Press Start 2P", system-ui;
+  border-color: rgb(0, 128, 32);
+  text-shadow: 1px 1px 1px rgb(0, 128, 32);
+}
+
+
+.capcha{
+  font-size: medium;
+  margin-bottom: auto;
+}
+
+.box {
+  background: #ffffff;
+  width: 300px;
+  height: 300px;
+}

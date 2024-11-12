@@ -1,0 +1,137 @@
+.main_site_btn{
+    display: flex;
+    justify-content: center;
+}
+
+.cart{
+    border-radius: 30%;
+    cursor: pointer;
+    width: 50px;
+}
+
+.main_cart{
+    display: flex;
+    top: 3%;
+    right: 2%;
+    position: fixed;
+}
+
+.cart_menu{
+    height:400px;
+    width: 300px;
+    position:fixed;
+    background: linear-gradient(to left, red, white);
+    border-radius: 10px;
+    padding: 1em 2em 1em;
+    right: -900px;
+    transition: 1s all;
+
+    overflow-y:scroll;
+}
+
+.cart_menu ol{
+    border-radius: 10px;
+    margin-left: 0px;
+    transition: 1s all;
+}
+
+.cart_menu ol li{
+    margin-top: 10px;
+}
+
+.cart_menu ol li:hover{
+    border-radius: 10px;
+    margin-top: 10px;
+    background: black;
+}
+
+.покупки{
+    border-bottom: 3em;
+    border-color: black;
+}
+
+.ringbell{
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height:40px;
+    width: 40px;
+    transition: 1s all;
+}
+
+.notifications a:hover, .notifications div:hover{
+    cursor: pointer;
+    color:black;
+}
+
+.notifications a{
+    display: block;
+    margin-bottom: 0em;
+    height:0;
+    opacity: 0;
+}
+
+.notification_system{
+    border-radius: 10px;
+    left: 0;
+    width: 330px;
+}
+.notification_system{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notifier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    position: absolute;
+    content: var(--after-content, "5");
+    margin-left: 38px;
+    margin-top: -30px;
+    border-radius: 100%;
+    width: auto;
+    height: auto;
+    min-width: 2em;
+    min-height: 2em;
+    font-size: small;
+    opacity: 1;
+    transition: 1s all;
+
+}
+
+#lin:hover{
+    cursor: pointer;
+    color:blanchedalmond;
+}
+
+.slider{
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.slide{
+    background: rgb(105, 89, 89);
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.runner{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 10px;
+    background: red;
+    width: 30px;
+    height: 60px;
+    margin-top: -10px;
+}
+
+.runner:active{
+    cursor: grabbing;
+}
